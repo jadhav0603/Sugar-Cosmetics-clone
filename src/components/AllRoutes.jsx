@@ -17,7 +17,7 @@ import Favourite from '../components/Favourite';
 import BagData from "./BagData";
 import SearchData from '../pages/SearchData'
 import NotFound from "../pages/NotFound";
-import Payment from "../pages/payment";
+import Payment from "../pages/Payment";
 
 export default function AllRoutes() {
   return (
