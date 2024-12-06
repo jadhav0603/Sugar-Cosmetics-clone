@@ -1,0 +1,99 @@
+#shadeContainer{
+    width:70vw;
+    display: flex;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    border-radius: 20px;
+}
+
+#leftDiv{
+    width: 40vw;
+    height: 25vw;
+    display: flex;
+    justify-content:space-evenly;
+    padding-top: 3vw;
+}
+
+
+#smallImg{
+    width: 5vw;
+    height: 6vw;
+    border: 1px solid rgb(190, 188, 188);
+    border-radius: 10px;
+}
+
+#bigImg{
+    width: 17vw;
+    border: 1px solid rgb(190, 188, 188);
+    border-radius: 10px;
+}
+
+#rightDiv{
+    width: 60vw;
+    padding: 3vw; 
+}
+
+#heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size:x-small;
+}
+
+#discrip{
+    margin: 12px 0px;
+}
+
+#price{
+    background-color: black;
+    color: white;
+    width: fit-content;
+    padding: 0px 10px;
+    border-radius: 20px;
+}
+
+#colorShade{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 10px;
+    /* justify-content: center; */
+}
+
+/* #colorShade > div{
+    margin: 10px;
+} */
+
+#commonQue > h1{
+    font-size: larger;
+    font-weight: 700;
+    margin: 20px 0px;
+}
+
+#btns{
+    display: flex;
+    font-size: 1vw;
+    justify-content: center;
+}
+
+.btn1{
+    background-color: white;
+    color:black;
+    border: 2px solid black;
+    padding: 0.6vw 1.2vw;
+    font-size: larger;
+    margin-right: 10px;
+    border-radius: 15px;
+    margin: 20px 10px;
+}
+
+.btn2{
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    padding:0.7vw 3vw;
+    font-size: 0.9vw;
+    margin: 20px 10px;
+}

@@ -1,0 +1,59 @@
+#filterContainer{
+    width: 28vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: auto;
+    font-size: 1.2vw;
+}
+
+#sortOptions{
+    width:22vw;
+    height: 4vw;
+    background-color: white;
+    margin:  1.5vw  auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+#sortOptions > select {
+    width: 15vw;
+    margin:10px 0px 10px 10px;
+}
+
+
+#filters{
+    width: 22vw;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    font-weight: 600;
+    padding: 20px 30px;
+}
+
+#filters > ul > li{
+    list-style: none;
+}
+
+#filters > ul > li > p{
+    display:flex;
+    justify-content: space-between;
+
+}
+
+label{
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+label > input {
+    margin: 1vw 1vw;
+    width: 1vw;
+}
+
+
+
+
+

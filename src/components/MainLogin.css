@@ -1,0 +1,91 @@
+#container{
+    margin: -10px;
+    padding: 0%;
+    font-family:sans-serif;
+}
+
+#loginContainer{
+    display: flex;
+    margin: 0%;
+    padding: 0%
+}
+
+#leftDiv{
+    background-image: url('../images/login/left_Img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:40vw;
+    height: 97vh;
+    border:1px solid black;
+}
+
+#rightDiv{
+    background-image: url('../images/login/gray-background-geometric-pattern.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    width:65vw
+}
+
+#backBtn{
+    width: 65vw;
+    height: 10vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 24px;
+    padding-left: 40px;
+}
+
+ h1{
+    font-size: 130px;
+    font-weight: 700;
+    color: rgb(151, 151, 151);
+    margin: 0%;
+}
+
+ h5{
+    margin: 0%;
+    font-size: larger;
+    letter-spacing: 0.5px;
+}
+
+#mobileNoHead{
+    position: relative;
+    top:21px;
+    z-index:1;
+    color:grey;
+    font-size: ;
+    margin-left: -30px;
+}
+
+ input{
+    padding: 15px;
+    border: 1px solid rgb(202, 197, 197);
+    border-radius: 10px;
+    background-color: rgb(246,246,244);
+}
+
+
+ p{
+    color:rgb(85, 83, 83);
+    padding: 0px 50PX;
+    font-size: small;
+}
+
+#terms_condition{
+    color:rgb(85, 83, 83);
+    font-size: small;
+    display: flex;
+    justify-content: center;
+}
+
+b{
+    margin-left: 45vw;
+}
+
+span{
+    color: rgb(251,39,128);
+}

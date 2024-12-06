@@ -1,0 +1,178 @@
+#footerContainer{
+    font-family: sans-serif;
+    background-color: black;
+    justify-content: center;
+}
+
+#subscribeSearch{
+    text-align: center;
+    padding: 30px;
+    background-image: url('../images/login/gray-background-geometric-pattern.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* position: relative;  */
+    padding: 90px 0px 150px 0px;
+}
+
+#subscribeHeading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pinkDiv{
+    background-color: rgb(194, 86, 104);
+    width: 80px;
+    height:2px;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+#subscribeHeading > h1 {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+
+
+#subscribeSearch > p {
+    font-size: larger;
+    margin-bottom: 20px;
+}
+
+#subscribeInput{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+#subscribeInput > input {
+    background-color: white;
+    width: 42vw;
+    height: 50px;
+    font-size: larger;
+}
+
+#subscribeInput > button {
+    background-color: black;
+    color: white;
+    height: 50px; 
+}
+
+
+
+
+/* footer part-2 */
+
+#SugarAbout{
+    display: flex;
+    justify-content: center;
+    margin-bottom: -30px;
+}
+
+#sugarLogoBorderDiv{
+    width: 160px;
+    height: 160px;
+    background-color: black;
+    text-align: center;
+    border-radius: 50%;
+    padding: 18px;
+    position: relative;
+    bottom: 80px;
+}
+
+#contactUsIcons{
+    display: flex;
+    justify-content: center;
+}
+
+#contactUsIcons > div {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    color: black;
+    background-color: rgb(121, 120, 120);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+hr{
+    width: 90%;
+    justify-content: center;
+    margin:2% 4%;
+}
+
+#footerContainer > ul{
+    color: white;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+#footerContainer > li{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2vw;
+    margin: 0px 20px;
+}
+
+#footerContainer > h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: 500; 
+    margin: 0% 10%
+}
+
+table {
+    color: white;    
+    width: 80%;
+    margin: auto;
+}
+
+th{
+    text-align: start;
+    padding: 10px 0px;
+    font-weight: 700;
+}
+
+td{
+    color:#969696;
+}
+
+#contact_joinUs{
+    font-weight: 600;
+}
+
+#playstoreApplestore{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#playstoreApplestore > div{
+  margin: 0px 10px;
+}
+
+#playstoreApplestore > img {
+    width: 8vw;
+    height: 40px;
+    margin: 0px 10px;
+}
+
+#lasthr{
+    width:97%;
+    margin: 20px ;
+}
+
+#footerContainer > p{
+    color:#969696;
+    text-align: center;
+    padding: 5px 0px 20px 0px;
+
+}

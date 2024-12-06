@@ -1,0 +1,59 @@
+#sliderImages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#leftbtn{
+    position: relative;
+    left: 7vw;
+    z-index: 0;
+}
+
+.fa-less-than{
+    background-color: black;
+    color:white;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: smaller;
+    opacity: 60%;
+    /* position: relative; */
+    z-index: 2;
+}
+
+#sliderImages > img{
+    width: 100vw;
+    height: 25vw;
+}
+
+#rightbtn{
+    position: relative;
+    right: 7vw;
+    z-index: 0;
+}
+
+.fa-greater-than{
+    background-color: black;
+    color:white;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: smaller;
+    opacity: 60%;
+    /* position: relative; */
+    z-index: 2;
+}
+
+#sliderDiv{
+    display: flex;
+    justify-content: center;
+    width: 98vw;
+    background-color: rgb(242, 242, 242);
+}
+
+#sliderDiv > div{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 10px;
+}
