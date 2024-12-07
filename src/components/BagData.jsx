@@ -64,7 +64,7 @@ function BagData() {
                                     />
                                     <div>
                                         <div className="item-details">
-                                            <p>{item.description}</p>
+                                            <p>{item.description || item.name} </p>
                                             <p>
                                                 MRP: <b>$ {item.price}</b>
                                             </p>
