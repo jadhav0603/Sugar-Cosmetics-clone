@@ -1,14 +1,20 @@
 import { useState, useEffect, useRef } from "react";
 import "./ImageSlider.css";
 import React from "react";
+import img1 from "../images/slider/img1.webp";
+import img2 from "../images/slider/img2.webp";
+import img3 from "../images/slider/img3.webp"
+import img4 from "../images/slider/img4.webp"
+import img5 from "../images/slider/img5.gif"
 
 function ImageSlider() {
   const Links = [
-    "src/images/slider/img1.webp",
-    "src/images/slider/img2.webp",
-    "src/images/slider/img3.webp",
-    "src/images/slider/img4.webp",
-    "src/images/slider/img5.gif",
+    // "src/images/slider/img1.webp",
+    // "src/images/slider/img2.webp",
+    // "src/images/slider/img3.webp",
+    // "src/images/slider/img4.webp",
+    // "src/images/slider/img5.gif",
+    img1,img2,img3,img4,img5
   ];
 
   const [index, setIndex] = useState(0);
