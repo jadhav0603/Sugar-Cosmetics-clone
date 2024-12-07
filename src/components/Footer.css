@@ -129,6 +129,12 @@ hr{
     margin: 0% 10%
 }
 
+#tableDiv{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1vw;
+}
+
 table {
     color: white;    
     width: 80%;

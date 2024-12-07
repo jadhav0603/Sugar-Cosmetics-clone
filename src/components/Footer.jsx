@@ -63,7 +63,7 @@ function Footer() {
                 
                     <h2>GET IN TOUCH</h2>
                 
-                <div>
+                <div id="tableDiv">
                     <table>
                         <thead>
                             <tr>
