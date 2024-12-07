@@ -7,7 +7,7 @@
     width: 70vw;
     display: grid;
     /* grid-template-columns: repeat(3, 1fr); */
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(17vw, 1fr));
     grid-row-gap: 3vw;
     padding: 1.8vw;
 }
@@ -64,6 +64,10 @@
     border: 2px solid black;
     padding:0.7vw 3vw;
     font-size: 0.9vw;
+}
+
+.pagination{
+    width:70vw;
 }
 
 

@@ -49,6 +49,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
 const styles = {
     paginationContainer: {
         display: "flex",
+        flexWrap:"wrap",
         justifyContent: "center",
         alignItems: "center",
         margin: "20px 0",
