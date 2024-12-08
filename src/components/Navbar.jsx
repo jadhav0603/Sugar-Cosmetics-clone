@@ -116,7 +116,7 @@ function Navbar() {
     Navigate('/favourite')
   }
 
-  function handleBag(){
+  function handleBag() {
     Navigate('/BagData')
   }
 
@@ -125,61 +125,63 @@ function Navbar() {
   return (
     <div id="navContainer">
       <div id="navSearchBar">
+        <div style={{display:"flex",alignItems:"center"}}>
+          <Link to={Links[0].to}>
+            <img style={{marginRight:"5vw"}} src={logo} alt="Logo" />
+          </Link>
 
-        <Link to={Links[0].to}>
-          <img src={logo} alt="Logo" />
-        </Link>
-
-        <div id="inputTags">
-          <input
-            type="text"
-            id="searchInput"
-            placeholder='Try "Liquid Lipstick"'
-            onChange={(e) => setValue(e.target.value)}
-          />
-          <button
-            type="button"
-            id="searchBtn"
-            style={{
-              display: "flex",
-              alignItems: "center",
-              flexWrap: "nowrap",
-            }}
-            onClick={() => handleSearch(value)}
-          >
-
-            <FontAwesomeIcon
-              icon={faMagnifyingGlass}
-              style={{ marginRight: "10px" }}
+          <div id="inputTags">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder='Try "Liquid Lipstick"'
+              onChange={(e) => setValue(e.target.value)}
             />
-            Search
-          </button>
+            <button
+              type="button"
+              id="searchBtn"
+              style={{
+                display: "flex",
+                alignItems: "center",
+                flexWrap: "nowrap",
+              }}
+              onClick={() => handleSearch(value)}
+            >
 
+              <FontAwesomeIcon
+                icon={faMagnifyingGlass}
+                style={{ marginRight: "10px" }}
+              />
+              Search
+            </button>
+          </div>
+        </div>
 
-        </div>
-        <div id="loginRegister">
-          <FontAwesomeIcon icon={faUser} />
-          <a href="/src/Login.html" onClick={handleLogin}>
-            {login}
-          </a>
-        </div>
-        
-        <div id="shopIcons">
-          <FontAwesomeIcon
-            icon={faHeart}
-            style={{ color: "white", padding: "10px", cursor: "pointer" }}
-            onClick={handleFav}
-          />
-          <FontAwesomeIcon
-            icon={faBagShopping}
-            style={{ color: "white", padding: "10px", cursor: "pointer" }}
-            onClick={handleBag}
-          />
-          <FontAwesomeIcon
-            icon={faPercent}
-            style={{ color: "white", padding: "10px", cursor: "pointer" }}
-            onClick={handleOffers}
-          />
+        <div style={{display:"flex", flexWrap:"wrap", justifyContent:"center"}}>
+          <div id="loginRegister">
+            <FontAwesomeIcon icon={faUser} />
+            <a href="/src/Login.html" onClick={handleLogin}>
+              {login}
+            </a>
+          </div>
+
+          <div id="shopIcons">
+            <FontAwesomeIcon
+              icon={faHeart}
+              style={{ color: "white", padding: "10px", cursor: "pointer" }}
+              onClick={handleFav}
+            />
+            <FontAwesomeIcon
+              icon={faBagShopping}
+              style={{ color: "white", padding: "10px", cursor: "pointer" }}
+              onClick={handleBag}
+            />
+            <FontAwesomeIcon
+              icon={faPercent}
+              style={{ color: "white", padding: "10px", cursor: "pointer" }}
+              onClick={handleOffers}
+            />
+          </div>
         </div>
       </div>
 
