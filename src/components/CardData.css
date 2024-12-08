@@ -43,6 +43,7 @@
 }
 
 .btn{
+    /* width: 20vw; */
     display: flex;
     font-size: 1vw;
     justify-content: center;
@@ -54,7 +55,7 @@
     border: 2px solid black;
     padding: 0.6vw 1.2vw;
     font-size: larger;
-    margin-right: 1vw;
+    /* margin-right: 1vw; */
     border-radius: 15px;
 }
 

@@ -102,7 +102,7 @@ function Home() {
         <h2 className="homeHeading">
           <div></div>{title}<div></div>
         </h2>
-        <div className="cardMain" style={{ gridTemplateColumns: "repeat(4, 1fr)", width: "90vw", margin: "auto" }}>
+        <div className="cardMain" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(20vw, 1fr))", width: "90vw", margin: "auto" }}>
           {loading ? (
             <div style={{ margin: "20px", fontSize: "4vw", fontWeight: 500 }}>Loading...</div>
           ) : items.length > 0 ? (

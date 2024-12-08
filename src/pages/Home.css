@@ -14,16 +14,7 @@
     margin: 0px 10px;
 }
 
-.cardMain{
-    width: 70vw;
-    /* display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-row-gap: 3vw; */
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5vw;
-    padding: 1.8vw;
-}
+
 /*
 .cards{
     width:92vw;
