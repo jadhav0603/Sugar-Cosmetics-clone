@@ -17,7 +17,7 @@ function SearchData() {
         const getSearchedData = async () => {
             setLoading(true)
             // const data = await fetchData(searchVal + selectedOption)
-            const response = await fetch(`http://makeup-api.herokuapp.com/api/v1/products.json`);
+            const response = await fetch(`https://makeup-api.herokuapp.com/api/v1/products.json`);
             const data = await response.json();
 
             const filteredResult = data.filter((ele)=>{
