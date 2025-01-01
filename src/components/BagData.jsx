@@ -41,6 +41,7 @@ function BagData() {
     };
 
     const handleBuyNow = () => {
+        setBagData([])
         Navigate("/payment");
     };
 

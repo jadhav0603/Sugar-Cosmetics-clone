@@ -2,12 +2,12 @@ import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useState, useContext } from "react";
 import "./SelectShade.css";
-import { SelectedOptionContext } from "../components/SelectedOptionContext"
+import { SelectedOptionContext } from "../components/SelectedOptionContext";
 
 function SelectShade() {
   const [activeIndex, setActiveIndex] = useState(null);
   const { favData, setFavData } = useContext(SelectedOptionContext);
-  const { BagData, setBagData} = useContext(SelectedOptionContext);
+  const { BagData, setBagData } = useContext(SelectedOptionContext);
 
   const Navigate = useNavigate();
 
@@ -21,37 +21,41 @@ function SelectShade() {
     setActiveIndex(index);
   }
 
-  function handlePayment() {
-    Navigate("/payment");
+  function handlePayment(ele) {
+    const isBag = BagData.some((item) => item.id === ele.id);
+    if (!isBag) {
+      setBagData([...BagData, ele]);
+    }
+    Navigate("/BagData");
   }
 
   function handleFavourite(ele) {
     const isFav = favData.some((item) => item.id === ele.id);
     if (!isFav) {
-        setFavData([...favData, ele]);
+      setFavData([...favData, ele]);
     } else {
-        setFavData(favData.filter((item) => item.id !== ele.id));
+      setFavData(favData.filter((item) => item.id !== ele.id));
     }
-}
-
-function handleBag(ele) {
-  const isBag = BagData.some((item) => item.id === ele.id);
-  if (!isBag) {
-      alert("Your product is added in bag")
-      setBagData([...BagData, ele]);
-  } else {
-    alert("Your product is aleady added in bag please check bag")
-      // setBagData(BagData.filter((item) => item.id !== ele.id));
   }
-}
 
-function isBagData(ele){
-  return BagData.some((item) => item.id === ele.id)
-}
+  function handleBag(ele) {
+    const isBag = BagData.some((item) => item.id === ele.id);
+    if (!isBag) {
+      alert("Your product is added in bag");
+      setBagData([...BagData, ele]);
+    } else {
+      alert("Your product is aleady added in bag please check bag");
+      // setBagData(BagData.filter((item) => item.id !== ele.id));
+    }
+  }
 
-function isFavourite(ele) {
+  function isBagData(ele) {
+    return BagData.some((item) => item.id === ele.id);
+  }
+
+  function isFavourite(ele) {
     return favData.some((item) => item.id === ele.id);
-}
+  }
 
   return (
     <div id="main">
@@ -60,7 +64,7 @@ function isFavourite(ele) {
           <div id="leftDiv">
             <img
               id="smallImg"
-              src={ele.api_featured_image|| ele.image_link}
+              src={ele.api_featured_image || ele.image_link}
               alt="not available"
             />
             <img id="bigImg" src={ele.api_featured_image} alt="404 Not Found" />
@@ -115,7 +119,10 @@ function isFavourite(ele) {
               >
                 <i className="fa-solid fa-heart"></i>
               </button>
-              <button className="btn2" onClick={()=>handleBag(ele)}> ADD BAG</button>
+              <button className="btn2" onClick={() => handleBag(ele)}>
+                {" "}
+                ADD BAG
+              </button>
             </div>
 
             <div id="commonQue">
@@ -143,7 +150,7 @@ function isFavourite(ele) {
                 guide too!
               </p>
 
-              <button className="btn2" onClick={() => handlePayment()}>
+              <button className="btn2" onClick={() => handlePayment(ele)}>
                 {" "}
                 BUY NOW
               </button>
