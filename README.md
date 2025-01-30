@@ -1,8 +1,26 @@
-# React + Vite
+# 💄 Sugar Cosmetics Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clone of the Sugar Cosmetics website with interactive UI and smooth shopping experience.
 
-Currently, two official plugins are available:
+## 🚀 Features
+- 🛍️ **Attractive Product Display** – High-quality images & detailed descriptions.
+- 🔍 **Search & Filter** – Advanced search and filters for category, price, and popularity.
+- 🔐 **User Authentication** – Secure login & registration system.
+- 🛒 **Cart Management** – Add, remove & review products before purchase.
+- 📑 **Product Detail Pages** – View specifications, ingredients & customer reviews.
+- 📌 **Dynamic Routing** – Clicking on a product dynamically loads details.
+- 📱 **Mobile-Friendly Design** – Fully responsive for seamless experience.
+- 💎 **Modern UI/UX** – Clean and professional look like the real Sugar Cosmetics website.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 Tech Stack
+- **Frontend:** React.js, Tailwind CSS
+- **Backend:** Node.js, Express.js, MongoDB, Mongoose
+- **Authentication:** JWT, Bcrypt
+- **Hosting:** Vercel (Frontend), Render (Backend)
+
+## 📥 Installation  
+```sh
+git clone https://github.com/yourusername/sugar-cosmetics-clone.git
+cd sugar-cosmetics-clone
+npm install
+npm start
